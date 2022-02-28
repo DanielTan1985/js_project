@@ -1,0 +1,93 @@
+/* [*] universal selector*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+
+/* viewport to displayed proportionally to the device screen regardless of the resolution. */
+.background {
+	height: 100vh;
+	width: 100vw;
+	background: url('images/background-img.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/*z-index = An element with greater stack order is always in front of an element with a lower stack order*/
+.bird {
+	height: 100px;
+	width: 100px;
+	position: fixed;
+	top: 40vh;
+	left: 30vw;
+	z-index: 100;
+}
+
+/*image gradients w3schools*/
+.pipe_css {
+	position: fixed;
+	top: 40vh;
+	left: 100vw;
+	height: 70vh;
+	width: 6vw;
+	background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+	border: 5px solid black;
+}
+
+/*em = desired element pixel value / parent element font-size in pixels*/
+/*The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).*/
+.message {
+	position: absolute;
+	z-index: 10;
+	color: black;
+	top: 30%;
+	left: 50%;
+	font-size: 4em;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.messageStyle{
+	background: whitesmoke;
+	padding: 30px;
+}
+
+/*z-index - greater stack order is always in front of an element with a lower stack order.*/
+.score {
+	position: fixed;
+	z-index: 10;
+	height: 10vh;
+	font-size: 10vh;
+	font-weight: 100;
+	color: white;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.score_val {
+	color: purple;
+	font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 1080px) {
+    .message{
+		font-size: 50px;
+		top: 50%;
+	}
+	.score{
+		font-size: 8vh;
+	}
+	.bird{
+		width: 100px;
+		height: 100px;
+	}
+	.pipe_css{
+		width: 14vw;
+	}
+}
