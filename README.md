@@ -1,2 +1,5 @@
 # js_project
-game 
+A F1appy Bird game made using html, css, js
+
+[Enter] to start
+[Space] to jump
